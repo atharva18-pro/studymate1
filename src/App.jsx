@@ -239,7 +239,7 @@ function FocusTimer(){const [seconds,setSeconds]=useState(25*60);const [running,
 function Card({title,icon,action,children}){return <section className="card"><div className="cardHead"><div className="titleWithIcon">{icon}<h2>{title}</h2></div>{action}</div>{children}</section>}
 function Quick({icon,title,text,onClick}){return <button className="quick" onClick={onClick}><div className="quickIcon">{icon}</div><div><b>{title}</b><span>{text}</span></div><ChevronRight/></button>}
 function Field({label,children}){return <label className="field"><span>{label}</span>{children}</label>}
-function ProgressBar({label,value}){return <div className="progressWrap">{label&&<div className="progressLabel"><span>{label}</span><b>{value}%</b></div>}<div className="bar"><i style={{width:`${value}%`}}/></div>}
+function ProgressBar({label,value}){return <div className="progressWrap">{label&&<div className="progressLabel"><span>{label}</span><b>{value}%</b></div>}<div className="bar"><i style={{width:`${value}%`}}/></div></div>}
 function Stat({label,value,icon}){return <div className="stat"><div className="statIcon">{icon}</div><span>{label}</span><b>{value}</b></div>}
 function Empty({text}){return <div className="empty">{text}</div>}
 
